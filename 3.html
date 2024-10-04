@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="3.js"></script>
+</head>
+<script>
+    function kiemtraSo(){
+    let soNgauNhien = Math.floor(Math.random() * 10);
+    console.log(soNgauNhien);
+
+    let userInput = document.getElementById('userInput').value;
+    userInput = Number(userInput);
+
+    if (userInput === soNgauNhien) {
+        alert('đoán đúng');
+    } else {    
+       alert('đoán sai');
+    }
+
+}
+</script>
+<body>
+    <input type="text" id="userInput" placeholder="Nhập số 0 đến 10">
+    <button onclick="kiemtraSo()">Kiểm tra</button>
+    
+</body>
+</html>
