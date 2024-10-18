@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đổi Màu Nền</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            transition: background-color 0.5s; /* Hiệu ứng chuyển màu nền mượt mà */
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #4CAF50; /* Màu xanh cho nút */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Hiệu ứng mượt mà khi di chuột */
+        }
+        .button:hover {
+            background-color: #45a049; /* Màu khi di chuột vào nút */
+        }
+    </style>
+</head>
+<body>
+<p>đổi màu tôi đi</p>
+    <button class="button" onclick="changeBackground()">Xanh</button>
+
+    <script>
+        function changeBackground() {
+            document.body.style.backgroundColor = "#4CAF50"; // Thay đổi màu nền thành xanh
+        }
+    </script>
+
+</body>
+</html>
